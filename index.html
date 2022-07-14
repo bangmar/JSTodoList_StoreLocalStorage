@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+        
+        th {
+            background-color: antiquewhite;
+        }
+        
+        td {
+            padding: 5px 25px 5px 25px;
+        }
+        
+        .done {
+            text-decoration: line-through;
+        }
+        
+        .btnRemove,
+        #checked {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>Simple todo list w/ JavaScript</header>
+    <h4>Mau ngerjain apa hari ini ? </h4>
+
+    <section>
+        <input type="text" id="myTodo">
+        <input type="submit" onclick="addTodo()">
+        <div>
+            <br>
+            <table id="todoTable">
+                <tr id="todoList">
+                    <th>Status</th>
+                    <th>todos</th>
+                    <th>action</th>
+                </tr>
+
+            </table>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
